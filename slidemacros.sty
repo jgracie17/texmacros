@@ -1,6 +1,11 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{slidemacros}
 
+%adding this to avoid bibliography and appendix warnings
+\pdfstringdefDisableCommands{%
+\def\translate#1{#1}%
+}
+
 \RequirePackage{pgfpages}
 % These slides also contain speaker notes. You can print just the slides,
 % just the notes, or both, depending on the setting below. Comment out the want
